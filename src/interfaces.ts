@@ -4,3 +4,10 @@ export interface Params {
   isInstallment: boolean
   months: number
 }
+
+export interface Post {
+  id: string
+  title: string
+  body: string
+}
+export type ObjById = Record<number, Post>
