@@ -11,3 +11,5 @@ export interface Post {
   body: string
 }
 export type ObjById = Record<number, Post>
+
+export type UsersList = Array<{ id: number, email: string }>

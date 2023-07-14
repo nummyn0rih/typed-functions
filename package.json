@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx nodemon",
-    "build": "rimraf ./build && npx tsc",
+    "build": "npx rimraf ./build && npx tsc",
     "start": "npm run build && node build/index.js",
     "lint": "npx eslint ./src"
   },
@@ -23,5 +23,8 @@
     "nodemon": "^3.0.1",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1"
   }
 }
